@@ -1,0 +1,18 @@
+doctors
+teachers
+engineers
+Business Analyst
+Market Research Analyst
+Digital Marketing Strategist
+Social Media Manager
+Marketing Manager
+Business Development Manager
+Management Consultant
+Advertising and Media Professional
+Legal Counsel
+Graphic Designer
+Technical Writer
+Content Manager
+Quality Assurance Manager
+Customer Relationship Manager
+Product Manager
