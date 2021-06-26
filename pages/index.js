@@ -5,13 +5,12 @@ import Head from "next/head";
 export default function Home({ apps, professions }) {
   const [randomApp, setRandomApp] = useState("");
   const [randomProfession, setRandomProfession] = useState("");
-  const [themeColor, setThemeColor] = useState("");
+  const [themeColor, setThemeColor] = useState("red");
 
   useEffect(() => {
     generate();
     const theme = localStorage.getItem("theme");
     if (theme) setThemeColor(theme);
-    else changeTheme("red");
   }, []);
 
   const changeTheme = (color) => {
