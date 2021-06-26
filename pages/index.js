@@ -25,12 +25,12 @@ export default function Home({ apps, professions }) {
     setRandomApp(apps[Math.floor(Math.random() * (apps.length - 1))]);
   };
   return (
-    <div className={`bg-red-100 p-2`}>
+    <div className={`bg-${themeColor}-100 p-2`}>
       <Head>
         <title>Generate Amazing App Ideas</title>
       </Head>
       <header className="flex justify-between items-center">
-        <h1 className={`font-semibold text-4xl text-red-500`}>
+        <h1 className={`font-semibold text-4xl text-${themeColor}-500`}>
           App Idea Generator
         </h1>
         <div>
@@ -75,7 +75,7 @@ export default function Home({ apps, professions }) {
             : ""}
         </p>
         <button
-          className={`mt-4 border-2 border-red-400 px-6 py-5 text-2xl hover:bg-red-200 rounded-md`}
+          className={`mt-4 border-2 border-${themeColor}-400 px-6 py-5 text-2xl hover:bg-${themeColor}-200 rounded-md`}
           onClick={generate}
         >
           New App Idea!
