@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { useEffect, useState } from "react";
-
+import Head from "next/head";
 export default function Home({ apps, professions }) {
   const [randomApp, setRandomApp] = useState("");
   const [randomProfession, setRandomProfession] = useState("");
@@ -27,6 +27,9 @@ export default function Home({ apps, professions }) {
   };
   return (
     <div className={`bg-${themeColor}-100 p-2`}>
+      <Head>
+        <title>Generate Amazing App Ideas</title>
+      </Head>
       <header className="flex justify-between items-center">
         <h1 className={`font-semibold text-4xl text-${themeColor}-500`}>
           App Idea Generator
